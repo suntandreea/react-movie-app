@@ -3,6 +3,8 @@ import React, {useCallback, useEffect, useState} from 'react';
 import MoviesList from './components/MoviesList';
 import './App.css';
 import AddMovie from './components/AddMovie';
+import ForwardCounter from './counter/ForwardCounter';
+import BackwardCounter from './counter/BackwardCounter';
 
 function App() {
 
@@ -72,6 +74,8 @@ function App() {
 
   return (
     <React.Fragment>
+      <ForwardCounter />
+      <BackwardCounter />
       <section>
         <AddMovie onAddMovie={addMovieHandler} />
       </section>
